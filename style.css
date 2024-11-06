@@ -1,0 +1,65 @@
+/* Styling for index file */
+
+body {
+  text-align: center;
+  background-color: #669bbc;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 3rem;
+  color: #FDF0D5;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  letter-spacing: 1rem;
+
+}
+
+.container {
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gameBoard {
+  width: 60vmin;
+  height: 60vmin;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1.25vmin;
+  background-color: #f2f2f2;
+  border-radius: 5px;
+  box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.2);
+  opacity: 0.95;
+}
+
+.box {
+  width: 18vmin;
+  height: 18vmin;
+  border: none;
+  cursor: pointer;
+  background-color: #003049;
+  font-size: 8vmin;
+  color: #fdf0d5;
+  border-radius: 1rem;
+  box-shadow: 0 0 1.5rem rgba(0, 0, 0, 0.3);
+}
+
+/* Code for reset button */
+
+#resetButton {
+  padding: 1rem;
+  border: none;
+  cursor: pointer;
+  background-color: #780000;
+  color: #fdf0d5;
+  border-radius: 1rem;
+  font-size: 1.25rem;
+}
