@@ -1,4 +1,9 @@
-/* Styling for index file */
+/* Global Reset and Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 body {
   text-align: center;
@@ -6,19 +11,15 @@ body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-}
-
+/* Heading Styles */
 h1 {
   font-size: 3rem;
   color: #FDF0D5;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
   letter-spacing: 1rem;
-
 }
 
+/* Layout Container */
 .container {
   height: 70vh;
   display: flex;
@@ -26,6 +27,7 @@ h1 {
   align-items: center;
 }
 
+/* Game Board Styling */
 .gameBoard {
   width: 60vmin;
   height: 60vmin;
@@ -40,26 +42,26 @@ h1 {
   opacity: 0.95;
 }
 
+/* Box Styles */
 .box {
   width: 18vmin;
   height: 18vmin;
-  border: none;
-  cursor: pointer;
   background-color: #003049;
-  font-size: 8vmin;
   color: #fdf0d5;
+  font-size: 8vmin;
+  border: none;
   border-radius: 1rem;
+  cursor: pointer;
   box-shadow: 0 0 1.5rem rgba(0, 0, 0, 0.3);
 }
 
-/* Code for reset button */
-
+/* Reset Button */
 #resetButton {
   padding: 1rem;
-  border: none;
-  cursor: pointer;
+  font-size: 1.25rem;
   background-color: #780000;
   color: #fdf0d5;
+  border: none;
   border-radius: 1rem;
-  font-size: 1.25rem;
+  cursor: pointer;
 }
