@@ -1,5 +1,4 @@
-/* Styling for index file */
-
+/* Global Styling */
 body {
   text-align: center;
   background-color: #669bbc; /* Pleasant blue shade */
@@ -11,16 +10,19 @@ body {
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box; /* Fix layout calculation issues */
 }
 
+/* Heading Styling */
 h1 {
   font-size: 3rem;
-  color: #FDF0D5;
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
-  letter-spacing: 1rem;
-
+  color: #fdf0d5; /* Light cream for better contrast */
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Nice shadow effect */
+  letter-spacing: 0.5rem; /* Slightly reduced spacing for readability */
+  margin-bottom: 2rem;
 }
 
+/* Main Container */
 .container {
   height: 70vh; /* Center gameboard in the viewport */
   display: flex;
@@ -43,27 +45,42 @@ h1 {
   opacity: 0.95;
 }
 
+/* Individual Box Styling */
 .box {
   width: 18vmin; /* Dynamic sizing */
   height: 18vmin;
   border: none;
   cursor: pointer;
-  background-color: #003049;
-  font-size: 8vmin;
-  color: #fdf0d5;
+  background-color: #003049; /* Deep blue */
+  font-size: 6vmin; /* Adjusted size for better scaling */
+  font-weight: bold;
+  color: #fdf0d5; /* Text color matches theme */
   border-radius: 1rem;
-  box-shadow: 0 0 1.5rem rgba(0, 0, 0, 0.3);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Consistent shadow */
+  transition: transform 0.2s ease, background-color 0.2s ease;
 }
 
-/* Code for reset button */
+.box:hover {
+  transform: scale(1.1); /* Slight zoom effect on hover */
+  background-color: #00509e; /* Highlighted color */
+}
 
+/* Reset Button Styling */
 #resetButton {
-  padding: 1rem;
+  margin-top: 2rem; /* Add space between gameboard and button */
+  padding: 1rem 2rem;
   border: none;
   cursor: pointer;
-  background-color: #780000;
+  background-color: #780000; /* Deep red for contrast */
   color: #fdf0d5;
-  border: none;
   border-radius: 1rem;
   font-size: 1.25rem;
+  font-weight: bold;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+#resetButton:hover {
+  background-color: #a00000; /* Slightly brighter red */
+  transform: scale(1.05); /* Small hover effect */
 }
